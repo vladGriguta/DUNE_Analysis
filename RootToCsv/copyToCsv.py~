@@ -14,6 +14,10 @@ class PyListOfLeaves(dict) :
 
 
 locationResults = '../finalCSVfiles/'
+import os
+if not os.path.exists(locationResults):
+    os.makedirs(locationResults)
+
 
 locationRootFiles = '../'
 nameOfSNFile = 'SN_tw1.root' #input('Give name of the ROOT file containing SN-like energy depositions:\n')
